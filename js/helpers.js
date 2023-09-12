@@ -48,7 +48,7 @@ const getWeather = () => {
       geoData = geoData[0];
       let cacheData = { ...geoData };
       fetch(
-        `https://api.openweathermap.org/data/2.5/weather?units=imperial&lat=${geoData.lat}&lon=${geoData.lon}&appid=${WEATHER_API_KEY}`
+        `https://api.openweathermap.org/data/2.5/weather?units=metric&lat=${geoData.lat}&lon=${geoData.lon}&appid=${WEATHER_API_KEY}`
       )
         .then((weatherRes) => weatherRes.json())
         .then((weatherData) => {
@@ -60,7 +60,7 @@ const getWeather = () => {
             fetchedAt: Date.now().toString(),
           };
           render(
-            `It's ${cacheData.temp} °F out in ${cacheData.name}, ${cacheData.state}. Expect ${cacheData.desc}.`
+            `It's ${cacheData.temp} °C out in ${cacheData.name}, ${cacheData.country}. Expect ${cacheData.desc}.`
           );
           localStorage.setItem("cachedWeather", JSON.stringify(cacheData));
         })
@@ -75,6 +75,6 @@ const getWeather = () => {
     });
 };
 
-const getDate = () => {};
+const getDate = () => { };
 
 export { render, error, getWeather, getDate, dateDiffInMinutes };
