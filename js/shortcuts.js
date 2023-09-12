@@ -24,11 +24,11 @@ export default [
     },
   },
   {
-    category: "Home Lab",
+    category: "Homelab",
     color: "green",
     items: {
       OPNsense: "https://opnsense.will-tm.io",
-      Proxmox: "https://proxmox.will-tm.io",
+      Proxmox: "https://pve.will-tm.io",
       Grafana: "https://grafana.will-tm.io",
       TrueNAS: "https://truenas.will-tm.io",
       "Uptime Kuma": "https://kuma.will-tm.io",
