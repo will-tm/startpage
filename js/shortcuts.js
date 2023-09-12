@@ -48,8 +48,8 @@ export default [
       Reddit: "https://www.reddit.com/",
       "1337X": "https://1337x.to/",
       "BV live": "https://live.beyondvisuals.hk",
-      "Octoprint": "https://octoprint.will-tm.io",
-      "Plex": "https://plex.will-tm.io",
+      Octoprint: "https://octoprint.will-tm.io",
+      Plex: "https://plex.will-tm.io",
     },
   },
 ];
