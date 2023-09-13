@@ -75,6 +75,7 @@ body {
 }
 
 .scrollable {
+  min-width: 140vh;
   height: 96vh;
   overflow: auto;
   box-sizing: border-box;
